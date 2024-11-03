@@ -1,0 +1,80 @@
+
+body{
+    font-family: "Roboto", serif;
+    color: var(--white-text-color); 
+
+    background-color: var(--containers-bg-color);    
+}
+
+nav img {
+    width: 50px;
+}
+
+
+.cart-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 12px 12px;
+}
+
+.navbar-cart-icon {
+    background-image: url(../imagens/cart-frame.svg);
+    padding: 20px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px;
+}
+
+.navbar-menu-icon {
+    background-image: url(../imagens/Menu.svg);
+    padding: 20px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.nav-login-logo{
+    background-image: url(../imagens/ico\ pessoa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+    padding: 12px 24px;
+}
+
+
+.custom-close {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px){
+    .conteudo-img{
+        display: none;
+    }
+
+    
