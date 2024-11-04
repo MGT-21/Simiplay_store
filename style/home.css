@@ -5,46 +5,63 @@ body{
 
     background-color: var(--containers-bg-color);    
 }
-
-nav img {
-    width: 50px;
-}
-
-
 .cart-toggler {
     background-color: transparent;
     border: none;
     padding: 12px 12px;
 }
 
-.navbar-cart-icon {
-    background-image: url(../imagens/cart-frame.svg);
-    padding: 20px 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 28px;
-}
-
-.navbar-menu-icon {
-    background-image: url(../imagens/Menu.svg);
-    padding: 20px 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 36px;
+.custom-navbar{
+    background-color: black;
 }
 
 .navbar-toggler {
     border: 0px;
+    padding: 0px;
+}
+
+.navbar-menu-icon {
+    background-image: url(../imagens/Menu.svg);
+    padding:14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+
+.navbar-cart-icon{
+    background-image: url(../imagens/cart-frame.svg);
+    padding: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.cart-toggler{
+    padding: 0px;
+}
+
+.custom-badge {
+    border-radius: 100%;
+    padding: 2px 4px;
+    position: relative;
+    left: -10px;
+    bottom: 8px;
+}
+
+
+.logo-text-container{
+    margin-left: 4px;
+    font-size: 16px;
 }
 
 .nav-login-logo{
-    background-image: url(../imagens/ico\ pessoa.png);
+    background-image: url(../imagens/ico\ pessoa.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 36px;
-    padding: 12px 24px;
+    background-size: 24px;
+    padding: 10px 12px;
 }
-
 
 .custom-close {
     color: white;
@@ -52,7 +69,19 @@ nav img {
 
 
 
+@media (min-width: 992px){
 
+    .custom-navbar{
+        z-index: 0;
+    }
+
+    .cart-colapse-content{
+        margin-top: 50px;
+        position: static;
+        width: 45%;
+        z-index: 1;
+    }
+}
 
 
 
