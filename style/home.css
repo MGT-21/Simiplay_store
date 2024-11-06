@@ -2,17 +2,13 @@
 body{
     font-family: "Roboto", serif;
     color: var(--white-text-color); 
-
+    
     background-color: var(--containers-bg-color);    
 }
-.cart-toggler {
-    background-color: transparent;
-    border: none;
-    padding: 12px 12px;
-}
 
+/*navbar*/
 .custom-navbar{
-    background-color: black;
+
 }
 
 .navbar-toggler {
@@ -28,6 +24,16 @@ body{
     background-size: 30px;
 }
 
+.logo-text-container{
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+.cart-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
 
 .navbar-cart-icon{
     background-image: url(../imagens/cart-frame.svg);
@@ -35,10 +41,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
-}
-
-.cart-toggler{
-    padding: 0px;
 }
 
 .custom-badge {
@@ -49,12 +51,6 @@ body{
     bottom: 8px;
 }
 
-
-.logo-text-container{
-    margin-left: 4px;
-    font-size: 16px;
-}
-
 .nav-login-logo{
     background-image: url(../imagens/ico\ pessoa.svg);
     background-repeat: no-repeat;
@@ -63,26 +59,36 @@ body{
     padding: 10px 12px;
 }
 
-.custom-close {
-    color: white;
+/*carrousel*/
+
+.carousel-container{
+    max-width: 1150px;
+    margin: 0 auto;
 }
 
+.carousel-item{
+    max-height: 400px;
+}
+
+/*conjunto de cards*/
 .cards-container{
     display: grid;
     grid-template-columns: auto auto;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin: 3rem 0.5rem 3rem 0.5rem;
+    max-width: 1024px;
 }
 
 .cards-container-title{
     grid-column-start: 1;
-     grid-column-end: 3;
+    grid-column-end: 3;
 }
 
 .card-elements-shop {
     gap: 4px;
     display: grid;
     grid-template: 
-            "b c c";
+    "b c c";
 }
 
 .area-b{
@@ -94,16 +100,21 @@ body{
     grid-area: c;
 }
 
-.custom-img{
-    background-image: url(../imagens/5.png);
+
+/*cart list*/
+
+.custom-close {
+    color: white;
 }
 
 
 
-
-
-@media (min-width:550px) and (max-width:765px) {
+@media (min-width:540px) and (max-width:765px) {
     
+    .carousel-item{
+        padding: 1rem 1rem 0 1rem;
+    }
+
     .cards-container{
         grid-template-columns: auto auto auto;
 
@@ -120,10 +131,16 @@ body{
 }
 
 
-@media (min-width:766px) {
-    
+@media (min-width:766px){
+
+    .carousel-item{
+        padding: 1rem 1rem 0 1rem;
+    }
+
     .cards-container{
         grid-template-columns: auto auto auto auto;
+        gap: 1rem;
+        margin: 3rem 1rem 3rem 1rem;
     }
 
     .cards-container-title{
@@ -132,20 +149,14 @@ body{
     }
 }
 
-
-
-
 @media (min-width: 992px){
 
-    .custom-navbar{
-        z-index: 0;
-    }
 
     .cart-colapse-content{
         margin-top: 50px;
         position: static;
         width: 45%;
-        z-index: 1;
+        
     }
 }
 

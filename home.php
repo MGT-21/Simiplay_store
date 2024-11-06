@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark py-1">
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark bg-dark py-2">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,54 +84,65 @@
       </div>
 
     </nav>
+    
+    <div class="carousel-container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagens/5.png" class="d-block w-100" alt="...">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active align-items-center justify-content-center">
-          <div class="px-5 custom-img py-5">
-            <span class="badge badge-danger text-uppercase mb-3 py-1">Por tempo limitado</span>
-            <h2 class="text-uppercase mb-3 h4">Pague com o pix e Ganhe 15% off</h2>
-            <p class="mb-3">Válido para qualquer produto de nossa loja</p>
-            <a type="button" class="btn btn-danger p-1" href=""> Aproveitar</a>
+            <div class="carousel-caption text-left d-flex align-items-center h-100 justify-content-between">
+
+              <div class="mt-5">
+                <span class="badge badge-dark text-uppercase mb-2 py-1">Por tempo limitado</span>
+                <h2 class="text-uppercase h3">Pague com o pix e Ganhe 15% off</h2>
+                <p class="mb-3">Válido para qualquer produto de nossa loja</p>
+                <a type="button" class="btn btn-warning" href=""> Aproveitar</a>
+              </div>
+              <div>
+                <img class="d-none d-md-block" src="../imagens/ilustracao.png" alt="" height="250px">
+              </div>
+
+            </div>
           </div>
-          <div class="d-none">
-            <img src="./imagens/ilustracao.png" alt="" height="250px">
+
+          <div class="carousel-item">
+            <img src="./imagens/5.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-left d-flex align-items-center h-100">
+
+            <div class="mt-5">
+              <span class="badge badge-dark text-uppercase py-1 mb-2">Por tempo limitado</span>
+              <h2 class="text-uppercase h3"> jogos a preço de banana</h2>
+              <p class="mb-3">Catálogo com jogos a partir de R$ 5,90 confira já!</p>
+              <a type="button" class="btn btn-warning" href=""> Conferir</a>
+            </div>
+
+            </div>
           </div>
         </div>
-        <div class="carousel-item align-items-center justify-content-center">
-          <div class="px-5 custom-img py-5">
-            <span class="badge badge-danger text-uppercase mb-3 py-1">Por tempo limitado</span>
-            <h2 class="text-uppercase mb-3 h4 text-bold"> jogos a preço de banana</h2>
-            <p class="mb-3">Catálogo com jogos a partir de R$ 5,90 confira já!</p>
-            <a type="button" class="btn btn-danger p-1" href=""> Aproveitar</a>
-          </div>
-          <div class="d-none">
-            <img src="./imagens/ilustracao.png" alt="" height="250px">
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </button>
     </div>
 
+    <div class="mt-4 d-flex justify-content-center align-items-center">
 
-    <div class="mt-4">
 
-      
-      <div class="mt-5 cards-container mx-3">
-        <div class="d-flex justify-content-between cards-container-title mb-3"> 
-          <h3 class="h4">fronsoftware</h3>
-          <button type="button" class="btn btn-warning">Warning</button>
+      <div class="cards-container">
+
+        <div class="d-flex justify-content-between cards-container-title mb-3">
+          <h3 class="h3">Fronsoftware</h3>
+          <a type="button" class="btn btn-warning">Ver mais</a>
         </div>
 
         <div class="card bg-dark">
@@ -140,6 +151,50 @@
             <div class="card-body p-1">
               <h5 class="card-title h5 my-2">Dark Souls II</h5>
               <p class="card-text mb-3">fronsoftware</p>
+            </div>
+          </a>
+          <div class="card-elements-shop">
+            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
+            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
+          </div>
+        </div>
+
+
+        <div class="card bg-dark">
+          <a href="#" class="text-light">
+            <img src="./imagens/ds-2.png" class="card-img-top" alt="...">
+            <div class="card-body p-1">
+              <h5 class="card-title h5 my-2">Dark Souls II</h5>
+              <p class="card-text mb-3">fronsoftware</p>
+            </div>
+          </a>
+          <div class="card-elements-shop">
+            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
+            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
+          </div>
+        </div>
+
+        <div class="card bg-dark">
+          <a href="#" class="text-light">
+            <img src="./imagens/ds-2.png" class="card-img-top" alt="...">
+            <div class="card-body p-1">
+              <h5 class="card-title h5 my-2">Dark Souls II</h5>
+              <p class="card-text mb-3">fronsoftware</p>
+            </div>
+          </a>
+          <div class="card-elements-shop">
+            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
+            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
+          </div>
+        </div>
+
+        <div class="card bg-dark">
+          <a href="#" class="text-light">
+            <img src="./imagens/ds-2.png" class="card-img-top" alt="...">
+            <div class="card-body p-1">
+              <h5 class="card-title h5 my-2">Dark Souls II</h5>
+              <p class="card-text mb-3">fronsoftware</p>
+            </div>
           </a>
           <div class="card-elements-shop">
             <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
@@ -147,60 +202,7 @@
           </div>
         </div>
       </div>
-      <div class="card bg-dark">
-        <a href="#" class="text-light">
-          <img src="./imagens/ds-2.png" class="card-img-top" alt="...">
-          <div class="card-body p-1">
-            <h5 class="card-title h5 my-2">Dark Souls II</h5>
-            <p class="card-text mb-3">fronsoftware</p>
-        </a>
-        <div class="card-elements-shop">
-          <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-          <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-        </div>
-      </div>
     </div>
-    <div class="card bg-dark">
-      <a href="#" class="text-light">
-        <img src="./imagens/ds-2.png" class="card-img-top" alt="...">
-        <div class="card-body p-1">
-          <h5 class="card-title h5 my-2">Dark Souls II</h5>
-          <p class="card-text mb-3">fronsoftware</p>
-      </a>
-      <div class="card-elements-shop">
-        <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-        <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-      </div>
-    </div>
-    </div>
-    <div class="card bg-dark">
-      <a href="#" class="text-light">
-        <img src="./imagens/ds-2.png" class="card-img-top" alt="...">
-        <div class="card-body p-1">
-          <h5 class="card-title h5 my-2">Dark Souls II</h5>
-          <p class="card-text mb-3">fronsoftware</p>
-      </a>
-      <div class="card-elements-shop">
-        <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-        <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-      </div>
-    </div>
-    </div>
-
-    </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="collapse navbar-collapse fixed-bottom cart-colapse-content float-right" id="CartSupportedContent">
@@ -240,11 +242,12 @@
 
       </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
 
-      <script src="./bootstrap/js-bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+
+    <script src="./bootstrap/js-bootstrap/bootstrap.min.js"></script>
   </body>
 
   </html>
