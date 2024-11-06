@@ -1,6 +1,6 @@
 <img src="./imagens/logo-banner.png">
 
-# Simiplay Store
+# Simiplay Store <img src="https://img.shields.io/badge/Status-em_desenvolvimento-yellow">
 
 A Simiplay é uma loja especializada em venda de keys para jogos e gift cards, contendo diversas opções para garantir a diversão dos seus clientes!
 
