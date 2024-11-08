@@ -1,6 +1,6 @@
 <a?php session_start(); // Inicia a sessão // Verifica se o usuário está logado if (!isset($_SESSION['username'])) { //
   Corrigido para 'username' para consistência header("Location: index.php"); // Redireciona para a página de login se
-  não estiver autenticado exit; } // Exibe uma mensagem de boas-vindas ?>
+  não estiver autenticado exit; }?>
 
   <!DOCTYPE html>
   <html lang="pt-br">
@@ -27,7 +27,7 @@
         <span class="navbar-menu-icon"></span>
       </button>
 
-      <a class="navbar-brand d-flex order-lg-0 align-items-center" href="#">
+      <a class="navbar-brand d-flex order-lg-0 align-items-center" href="home.php">
         <img src="./imagens/logo.svg" alt="">
         <ul class="logo-text-container">
           <li class="font-weight-bold logo-title-top">Simiplay</li>
@@ -40,7 +40,7 @@
         <button class="cart-toggler" data-toggle="collapse" data-target="#CartSupportedContent" aria-expanded="false">
           <span class="navbar-cart-icon"></span>
 
-          <span class="badge custom-badge badge-warning" id="">1</span>
+          <span class="badge custom-badge badge-warning" id="cart-number">0</span>
         </button>
 
 
@@ -51,7 +51,7 @@
           </button>
           <div class="dropdown-menu bg-dark dropdown-menu-right">
             <a class="dropdown-item text-light" href="./logout.php">Lista de desejos</a>
-            <a class="dropdown-item text-light" href="#">Meus pedidos</a>
+            <a class="dropdown-item text-light" href="pedidos.php">Meus pedidos</a>
             <a class="dropdown-item text-light" href="logout.php" target="">Sair</a>
           </div>
         </div>
@@ -67,13 +67,13 @@
               jogos
             </a>
             <div class="dropdown-menu bg-dark">
-              <a class="dropdown-item text-light" href="#">todos os jogos</a>
-              <a class="dropdown-item text-light" href="#">a preço de banana</a>
+              <a class="dropdown-item text-light" href="tudo.php">todos os jogos</a>
+              <a class="dropdown-item text-light" href="tudo.php">a preço de banana</a>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">gift cards</a>
+            <a class="nav-link" href="tudo.php">gift cards</a>
           </li>
 
           <li class="nav-item">
@@ -84,7 +84,7 @@
       </div>
 
     </nav>
-    
+
     <div class="carousel-container">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -114,12 +114,12 @@
             <img src="./imagens/5.png" class="d-block w-100" alt="...">
             <div class="carousel-caption text-left d-flex align-items-center h-100">
 
-            <div class="mt-5">
-              <span class="badge badge-dark text-uppercase py-1 mb-2">Por tempo limitado</span>
-              <h2 class="text-uppercase h3"> jogos a preço de banana</h2>
-              <p class="mb-3">Catálogo com jogos a partir de R$ 5,90 confira já!</p>
-              <a type="button" class="btn btn-warning" href=""> Conferir</a>
-            </div>
+              <div class="mt-5">
+                <span class="badge badge-dark text-uppercase py-1 mb-2">Por tempo limitado</span>
+                <h2 class="text-uppercase h3"> jogos a preço de banana</h2>
+                <p class="mb-3">Catálogo com jogos a partir de R$ 5,90 confira já!</p>
+                <a type="button" class="btn btn-warning" href=""> Conferir</a>
+              </div>
 
             </div>
           </div>
@@ -137,210 +137,17 @@
 
     <div class="mt-4 d-flex justify-content-center align-items-center">
 
-
-      <div class="cards-container">
-
+      <div class="cards-container" id="gameCardContainer">
         <div class="d-flex justify-content-between cards-container-title mb-3">
           <h3 class="h3">Fronsoftware</h3>
-          <a type="button" class="btn btn-warning">Ver mais</a>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
+          <a type="button" class="btn btn-warning" src="tudo.php">Ver mais</a>
         </div>
       </div>
     </div>
 
-    <div class="mt-4 d-flex justify-content-center align-items-center">
 
 
-      <div class="cards-container">
 
-        <div class="d-flex justify-content-between cards-container-title mb-3">
-          <h3 class="h3">Fronsoftware</h3>
-          <a type="button" class="btn btn-warning">Ver mais</a>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-4 d-flex justify-content-center align-items-center">
-
-
-      <div class="cards-container">
-
-        <div class="d-flex justify-content-between cards-container-title mb-3">
-          <h3 class="h3">Fronsoftware</h3>
-          <a type="button" class="btn btn-warning">Ver mais</a>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-
-        <div class="card bg-dark">
-          <a href="#" class="text-light">
-            <img src="./imagens/games/ds-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-1">
-              <h5 class="card-title h5 my-2">Dark Souls II</h5>
-              <p class="card-text mb-3">fronsoftware</p>
-            </div>
-          </a>
-          <div class="card-elements-shop">
-            <span class="btn btn-danger p-1 area-b btn-sm">-15%</span>
-            <button href="#" class="btn btn-primary area-c btn-sm">R$ 230,00</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="collapse navbar-collapse fixed-bottom cart-colapse-content float-right" id="CartSupportedContent">
 
@@ -359,8 +166,8 @@
 
         </div>
 
-        <div class="card-body" id="">
-          Jogos no carrinho
+        <div class="card-body cart-itens-container" id="cartItensContainer">
+
         </div>
 
         <div class="card-footer d-flex justify-content-between flex-column">
@@ -373,18 +180,28 @@
 
           </div>
 
-          <a href="#" class="btn btn-primary font-weight-bold text-uppercase">Finalizar compra</a>
+          <a href="pagamento.php" class="btn btn-primary font-weight-bold text-uppercase">Finalizar compra</a>
 
         </div>
 
       </div>
+    </div>
 
-
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2022 Simiplay</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
 
     <script src="./bootstrap/js-bootstrap/bootstrap.min.js"></script>
+    <script src="js/jogos.js"></script>
+    <script src="js/script.js"></script>
   </body>
 
   </html>

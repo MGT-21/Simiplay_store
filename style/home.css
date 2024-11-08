@@ -11,9 +11,7 @@ body{
 }
 
 /*navbar*/
-.custom-navbar{
 
-}
 
 .navbar-toggler {
     border: 0px;
@@ -76,8 +74,18 @@ body{
 
 /*conjunto de cards*/
 
+
+
+.cart-itens-container{
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
 .card-image{
     height: 47%;
+    width: 100%;
 }
 
 .card-title{
@@ -123,6 +131,24 @@ body{
 }
 
 
+/*página comprado*/
+
+.colapse-container{
+    height: 70vh;
+}
+.custom-layout{
+    width: 97vw;
+    
+}
+
+.descricao-title{
+    font-size: small;
+    color: #a0a0a0;
+}
+
+.colapse-contaier-botton{
+    background-color: rgb(37, 37, 37);
+}
 
 @media (min-width:540px) and (max-width:765px) {
     
@@ -168,34 +194,10 @@ body{
 
 
     .cart-colapse-content{
-        margin-top: 50px;
-        position: static;
-        width: 45%;
+        position: absolute;
+        top:0px;
+        left:0px;
+        margin: 50px 0vw 0 70vw;
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 575px){
-    .conteudo-img{
-        display: none;
-    }
-
-    
