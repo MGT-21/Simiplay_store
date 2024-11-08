@@ -6,6 +6,10 @@ body{
     background-color: var(--containers-bg-color);    
 }
 
+.models{
+    display: none;
+}
+
 /*navbar*/
 .custom-navbar{
 
@@ -71,6 +75,17 @@ body{
 }
 
 /*conjunto de cards*/
+
+.card-image{
+    height: 47%;
+}
+
+.card-title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
 .cards-container{
     display: grid;
     grid-template-columns: auto auto;
