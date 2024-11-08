@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register_nome'], $_POS
   
     <form method="POST" class="col-sm-6 col-xl-4 py-5 px-4 d-flex flex-column justify-content-center">
       <img src="./imagens/logo.png" alt="">
-      <h2 class="h2 mb-4 text-center">Cadastrar</h2>
+      <h2 class="h2 mb-4 text-center">Cadastrar-se</h2>
 
         <?php
             // Exibe mensagem de feedback, se existir
@@ -95,7 +95,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register_nome'], $_POS
       </div>
       
       <button type="submit" name="submit" class="btn btn-warning btn-block border-0 btn-lg">Cadastrar</button>
+      <a href="index.php" class="d-block text-center text-white mb-0">já tenho conta</a> 
     </form>
+    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

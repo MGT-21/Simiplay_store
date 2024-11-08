@@ -7,27 +7,25 @@ body{
 }
 
 form{
-    gap: 28px;
+    gap: 1rem;
     background-color: var(--containers-bg-color);
     height: 100vh;
 }
 
-form img{
-    margin: 0 auto;
-    max-width: 165px;
-}
 
 .form-control{
     background-color: rgba(255,255,255,0.1);
+    color: white;
 }
 .form-control:hover{
     background-color: rgba(255,255,255,0.2);
-    color: white;
+    
 }
 
 .custom-input:focus{
     background-color: rgba(255,255,255,0.2);
     box-shadow: none;
+    color: white;
 }
 
 .custom-input{
@@ -41,26 +39,10 @@ form img{
 .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: none;
 }
-  
-.btn{
-    background-color: var(--emphasis-bg-color);
-    color: var(--black-text-color);
-    font-weight: var(--bold-font-weight);  
-}
-
-form a {
-    color: var(--white-text-color);
-    text-decoration: underline;
-}
 
 
 @media (max-width: 575px){
     .conteudo-img{
         display: none;
-    }
-
-    form img{
-        max-height: 140px;
-        max-width: 140px;
     }
 }

@@ -172,6 +172,10 @@ body{
 }
 
 
+.background{
+    background-color: var(--containers-bg-color);
+}
+
 @media (min-width:766px){
 
     .carousel-item{

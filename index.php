@@ -64,6 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login_username'], $_PO
             unset($_SESSION['message']); // Limpa a mensagem após exibir
         }
       ?>
+
+      
       <img src="./imagens/logo.png" alt="">
       <h2 class="h2 mb-4 text-center">Login</h2>
       <div class="form-group">
@@ -82,9 +84,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login_username'], $_PO
       </div>
       
       <button type="submit" class="btn btn-warning btn-block border-0 btn-lg">Log in</button>
-      <a href="#" class="d-block text-center text-white mb-0">Esqueci minha senha</a>      
-      <div class="text-center mt-1 mb-1 text-white">ou</div>
-      <button type="submit" class="btn btn-secondary btn-block border-0 mt-0" onclick="window.location.href='cadastro.php'">Cadastrar-se</button> 
+
+      <a type="button" class="btn btn-outline-warning btn-lg" href="cadastro.php">cadastrar-se</a>
+
+      <a href="" class="d-block text-center text-white mb-0">Esqueci minha senha</a>      
+      
 
     </form>
   </div>
