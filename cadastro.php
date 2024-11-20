@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register_nome'], $_POS
           <input type="password" name="register_password" class="form-control custom-input py-4" id="exampleInputPassword1" placeholder="Digite sua senha aqui" required>
       </div>
       
-      <button type="submit" name="submit" class="btn btn-warning btn-block border-0 btn-lg">Cadastrar</button>
+      <button type="submit" name="submit" class="btn btn-warning btn-block border-0 btn-lg custom-link">Cadastrar</button>
       <a href="index.php" class="d-block text-center text-white mb-0">já tenho conta</a> 
     </form>
     

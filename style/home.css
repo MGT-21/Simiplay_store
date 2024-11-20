@@ -1,17 +1,20 @@
 
 body{
     font-family: "Roboto", serif;
-    color: var(--white-text-color); 
+    color: var(--black-text-color); 
     
     background-color: var(--containers-bg-color);    
 }
 
-.models{
-    display: none;
-}
-
 /*navbar*/
 
+#nav{
+    height: 60px;
+}
+
+.custom-navbar{
+    background-color: var(--black-collor);
+}
 
 .navbar-toggler {
     border: 0px;
@@ -72,9 +75,30 @@ body{
     max-height: 400px;
 }
 
+
+
+.carousel-title {
+    font-size: 24px;
+    font-weight: var(--bold-font-weight);
+}
+
+.carousel-paragraph {
+    font-size: 16px;
+    
+}
+
+
 /*conjunto de cards*/
 
+.custom-link{
+    font-weight: bold;
+    background-color: var(--emphasis-bg-color);
+}
 
+.gameCard {
+    border: none;
+    border-radius: 6px;
+}
 
 .cart-itens-container{
     max-height: 200px;
@@ -86,6 +110,7 @@ body{
 .card-image{
     height: 47%;
     width: 100%;
+    border-radius: 6px 6px 0 0;
 }
 
 .card-title{
@@ -94,7 +119,7 @@ body{
     overflow: hidden; 
 }
 
-.cards-container{
+.cards-container, .cards-container-promo{
     display: grid;
     grid-template-columns: auto auto;
     gap: 0.5rem;
@@ -102,33 +127,37 @@ body{
     max-width: 1024px;
 }
 
+
+
 .cards-container-title{
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.card-elements-shop {
-    gap: 4px;
-    display: grid;
-    grid-template: 
-    "b c c";
+.banner {
+    display: none !important; 
 }
-
-.area-b{
-    border-radius: 5px;
-    grid-area: b;
-}
-
-.area-c{
-    grid-area: c;
-}
-
 
 /*cart list*/
 
-.custom-close {
-    color: white;
+
+
+.cart-colapse-content{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    
 }
+
+/*footer*/
+
+.footer-text{
+    font-size: 12px;
+    
+}
+
+
 
 
 /*página comprado*/
@@ -150,6 +179,24 @@ body{
     background-color: rgb(37, 37, 37);
 }
 
+
+
+.footer-top{
+    display: flex;
+    align-items: center;
+    background-color: var(--emphasis-bg-color);
+}
+
+.links li {
+    padding: 2px;
+}
+
+.links li a{
+    color: white;
+}
+
+
+
 @media (min-width:540px) and (max-width:765px) {
     
     .carousel-item{
@@ -165,10 +212,15 @@ body{
         display: none;
     }
 
+    .cards-container-promo .card:nth-last-child(1), .cards-container-promo .card:nth-last-child(2){
+        display: none;
+    }
+
     .cards-container-title{
         grid-column-start: 1;
         grid-column-end: 4;
     }
+
 }
 
 
@@ -182,7 +234,7 @@ body{
         padding: 1rem 1rem 0 1rem;
     }
 
-    .cards-container{
+    .cards-container, .cards-container-promo{
         grid-template-columns: auto auto auto auto;
         gap: 1rem;
         margin: 3rem 1rem 3rem 1rem;
@@ -192,16 +244,21 @@ body{
         grid-column-start: 1;
         grid-column-end: 5;
     }
+
+    .banner {
+        display: flex !important; 
+    }
 }
 
 @media (min-width: 992px){
 
 
     .cart-colapse-content{
-        position: absolute;
-        top:0px;
-        left:0px;
-        margin: 50px 0vw 0 70vw;
+        position: fixed;
+        top:60px;
+        right: 0px;
+        width: 350px;
+        height: 25%;
         
     }
 }

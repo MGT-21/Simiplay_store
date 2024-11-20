@@ -3,13 +3,18 @@ body{
     font-family: "Roboto", serif;
     color: var(--white-text-color); 
 
-    background-image: url(../imagens/imagem\ com\ gradiente.png);    
+    background-image: url(../imagens/5.png);    
 }
 
 form{
     gap: 1rem;
     background-color: var(--containers-bg-color);
     height: 100vh;
+}
+
+.custom-link{
+    font-weight: bold;
+    background-color: var(--emphasis-bg-color);
 }
 
 

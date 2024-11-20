@@ -83,11 +83,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login_username'], $_PO
         <label class="custom-control-label" for="customCheck1">lembrar de mim</label>
       </div>
       
-      <button type="submit" class="btn btn-warning btn-block border-0 btn-lg">Log in</button>
+      <button type="submit" class="btn btn-warning btn-block border-0 btn-lg custom-link">Log in</button>
 
       <a type="button" class="btn btn-outline-warning btn-lg" href="cadastro.php">cadastrar-se</a>
 
-      <a href="" class="d-block text-center text-white mb-0">Esqueci minha senha</a>      
+      <a href="" class="d-block text-center text-white mb-0 custom-outline-link">Esqueci minha senha</a>      
       
 
     </form>
