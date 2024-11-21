@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/vars.css">
-    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/pedidos.css">
 
     <link rel="shortcut icon" href="./imagens/logo.svg" type="image/x-icon">
     <title>Simiplay store</title>

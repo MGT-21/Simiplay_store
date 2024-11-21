@@ -1,0 +1,18 @@
+@import url(./home.css);
+
+.colapse-container{
+    height: 70vh;
+}
+.custom-layout{
+    width: 97vw;
+    
+}
+
+.descricao-title{
+    font-size: small;
+    color: #a0a0a0;
+}
+
+.colapse-contaier-botton{
+    background-color: rgb(37, 37, 37);
+}

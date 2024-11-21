@@ -3,14 +3,12 @@
 :root{
 
 /*colors*/
-    /*background*/
+
     --black-collor: #000;
     --containers-bg-color: #0e121a;
-    --card-bg-color: #F0F0F0;
-    --emphasis-bg-color: #F7C846;
+    --theme-color: #F7C846;
+    --white-color: #FFFFFF;
     --input-checbox-color:rgba(255,255,255,0.1);
-    /*text*/
-    --white-text-color: #FFFFFF;
     --black-text-color: #000000;
     --input-bg-color: rgba(255,255,255,0.1);
     --input-bg-color-hover:rgba(255,255,255,0.2);

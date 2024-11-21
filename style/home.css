@@ -75,8 +75,6 @@ body{
     max-height: 400px;
 }
 
-
-
 .carousel-title {
     font-size: 24px;
     font-weight: var(--bold-font-weight);
@@ -92,7 +90,7 @@ body{
 
 .custom-link{
     font-weight: bold;
-    background-color: var(--emphasis-bg-color);
+    background-color: var(--theme-color);
 }
 
 .gameCard {
@@ -127,8 +125,6 @@ body{
     max-width: 1024px;
 }
 
-
-
 .cards-container-title{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -139,7 +135,6 @@ body{
 }
 
 /*cart list*/
-
 
 
 .cart-colapse-content{
@@ -156,35 +151,10 @@ body{
     font-size: 12px;
     
 }
-
-
-
-
-/*página comprado*/
-
-.colapse-container{
-    height: 70vh;
-}
-.custom-layout{
-    width: 97vw;
-    
-}
-
-.descricao-title{
-    font-size: small;
-    color: #a0a0a0;
-}
-
-.colapse-contaier-botton{
-    background-color: rgb(37, 37, 37);
-}
-
-
-
 .footer-top{
     display: flex;
     align-items: center;
-    background-color: var(--emphasis-bg-color);
+    background-color: var(--theme-color);
 }
 
 .links li {
@@ -192,9 +162,8 @@ body{
 }
 
 .links li a{
-    color: white;
+    color: var(--black-collor);
 }
-
 
 
 @media (min-width:540px) and (max-width:765px) {

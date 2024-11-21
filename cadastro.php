@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register_nome'], $_POS
     <link rel="stylesheet" href="./bootstrap/css-bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/vars.css">
-    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/forms.css">
     <title>Cadastro do Usuário</title>
 </head>
 <body class="container-fluid">

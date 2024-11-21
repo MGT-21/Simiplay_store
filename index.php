@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login_username'], $_PO
     <link rel="stylesheet" href="./bootstrap/css-bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/vars.css">
-    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/forms.css">
     <title>Login page</title>
 </head>
 <body class="container-fluid">
