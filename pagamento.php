@@ -10,41 +10,23 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>Checkout example · Bootstrap v4.6</title>
+    <title>Checkout Simiplay</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/checkout/">
-
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/vars.css">
+    <link href="./bootstrap/css-bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/pagamento.css">
+    
     <link rel="stylesheet" href="home.css">
-
-    
-
-    <!-- Bootstrap core CSS -->
-<link href="./bootstrap/css-bootstrap/bootstrap.min.css" rel="stylesheet">
-
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
+  
     <!-- Custom styles for this template -->
     <link href="./style/form-validation.css" rel="stylesheet">
   </head>
-  <body class="bg-dark text-light">
+  <body class=" text-light">
+
+  <div id="nav">
+</div>
     
 <div class="container">
   <div class="py-5 text-center">
@@ -210,26 +192,21 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block btn-danger" type="submit">finalizar compra</button>
+        <button class="btn btn-dark btn-lg btn-block text-dark custom-link" type="submit">finalizar compra</button>
       </form>
     </div>
   </div>
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017-2022 Company Name</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
-  </footer>
 </div>
 
+<div id="footer" class="mt-5">
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../bootstrap/js-bootstrap/bootstrap.bundle.min.js"></script>
 
       
         <script src="./js/form-validation.js"></script>
+        <script src="./js/components.js"></script>
   </body>
 </html>
