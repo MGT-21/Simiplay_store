@@ -56,7 +56,7 @@
             <div class="card-body colapse-contaier-botton d-flex justify-content-between">
               <ul>
                 <li class="descricao-title">Produtos(s)</li>
-                <li>Elden Ring</li>
+                <li class="text-white">Elden Ring</li>
               </ul>
               <button type="button" class="btn btn-warning">comprar novamente</button>
             </div>
@@ -93,7 +93,7 @@
             <div class="card-body colapse-contaier-botton d-flex justify-content-between">
               <ul>
                 <li class="descricao-title">Produtos(s)</li>
-                <li>Elden Ring</li>
+                <li class="text-white">Elden Ring</li>
               </ul>
               <button type="button" class="btn btn-warning">comprar novamente</button>
             </div>
@@ -131,7 +131,7 @@
             <div class="card-body colapse-contaier-botton d-flex justify-content-between">
               <ul>
                 <li class="descricao-title">Produtos(s)</li>
-                <li>Elden Ring</li>
+                <li class="text-white">Elden Ring</li>
               </ul>
               <button type="button" class="btn btn-warning">comprar novamente</button>
             </div>
@@ -168,7 +168,7 @@
             <div class="card-body colapse-contaier-botton d-flex justify-content-between">
               <ul>
                 <li class="descricao-title">Produtos(s)</li>
-                <li>Elden Ring</li>
+                <li class="text-white">Elden Ring</li>
               </ul>
               <button type="button" class="btn btn-warning">comprar novamente</button>
             </div>

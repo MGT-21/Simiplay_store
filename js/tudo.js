@@ -31,7 +31,7 @@ const cartItensContainer = document.getElementById('cartItensContainer');
                     <button href="#" type="button" class="btn btn-block btn-outline-dark btAddToCart custom-link" 
                     data-name="${item.name}" 
                     data-dealer="${item.dealer}"
-                    data-price="${item.price}">RS ${item.price}
+                    data-price="${item.price.toFixed(2)}">RS ${item.price.toFixed(2)}
                     </button>
                 </div>
             </div>
