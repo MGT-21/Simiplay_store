@@ -192,7 +192,7 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-dark btn-lg btn-block text-dark custom-link" type="submit">finalizar compra</button>
+        <a class="btn btn-dark btn-lg btn-block text-dark custom-link" href="home.php" type="submit">finalizar compra</a>
       </form>
     </div>
   </div>
